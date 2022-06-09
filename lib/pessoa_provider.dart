@@ -5,8 +5,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
 
 class PessoaProvider extends ChangeNotifier {
-  final urlRealtimeDatabase =
-      'https://exemplo-bd460-default-rtdb.firebaseio.com/pessoa';
+  final urlRealtimeDatabase = 'SUA_URL/pessoa';
+
+  // "SUA_URL" substitua esse trecho com a url do seu realtime databse no firestore
+  // "/pessoa" é o nome da coleção que vai ser criada
 
   final List<Pessoa> _pessoas = [];
 
